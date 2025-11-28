@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form Validation</title>
+</head>
+<body>
+
+  <h2>Simple Form</h2>
+  <form id="myForm" onsubmit="return validateForm()">
+    Name: <input type="text" id="name"><br><br>
+    Email: <input type="text" id="email"><br><br>
+    Password: <input type="password" id="password"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p id="message" style="color: green;"></p>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var message = document.getElementById("message");
+
+      // Clear previous message
+      message.textContent = "";
+     
+
+      if (name === "" || email === "" || password === "") {
+        alert("All fields are required.");
+        return false;
+      }
+
+      if (!/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/.test(email)){
+        alert("Please enter a valid email.");
+        return false;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters.");
+        return false;
+      }
+
+      // Show success message
+      message.textContent = "Submitted successfully!";
+      return false; // prevent actual form submission for demo
+    }
+  </script>
+
+</body>
+</html>
