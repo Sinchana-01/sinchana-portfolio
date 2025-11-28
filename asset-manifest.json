@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sinchana-portfolio1/static/css/main.f25b8687.css",
+    "main.js": "/sinchana-portfolio1/static/js/main.18753da0.js",
+    "static/js/453.8ab44547.chunk.js": "/sinchana-portfolio1/static/js/453.8ab44547.chunk.js",
+    "index.html": "/sinchana-portfolio1/index.html",
+    "main.f25b8687.css.map": "/sinchana-portfolio1/static/css/main.f25b8687.css.map",
+    "main.18753da0.js.map": "/sinchana-portfolio1/static/js/main.18753da0.js.map",
+    "453.8ab44547.chunk.js.map": "/sinchana-portfolio1/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f25b8687.css",
+    "static/js/main.18753da0.js"
+  ]
+}
